@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Work Experience</title>
+
+<style>
+body { font-family: Arial; margin:0; background:#eef2f3; }
+header { background:#1f2d3d; color:white; padding:20px; text-align:center; }
+nav { background:#2e86c1; padding:10px; text-align:center; }
+nav a { color:white; margin:10px; text-decoration:none; }
+.container { padding:30px; }
+
+.accordion {
+    background:#2e86c1;
+    color:white;
+    padding:15px;
+    width:100%;
+    border:none;
+    text-align:left;
+    margin-top:10px;
+}
+
+.panel {
+    display:none;
+    background:white;
+    padding:15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Sean Landers</h1>
+</header>
+
+<nav>
+<a href="index.html">Personal</a>
+<a href="page2.html">Education</a>
+<a href="page3.html">Experience</a>
+</nav>
+
+<div class="container">
+
+<h2>Work Experience</h2>
+
+<button class="accordion" onclick="togglePanel(this)">
+Bartender – Market Bar Kinsale
+</button>
+<div class="panel">
+<p>Sep 2025 – Present</p>
+<ul>
+<li>Customer service</li>
+<li>Handling payments</li>
+<li>Teamwork in fast environment</li>
+</ul>
+</div>
+
+<button class="accordion" onclick="togglePanel(this)">
+SuperValu Floor Assistant
+</button>
+<div class="panel">
+<p>July – Sep 2025</p>
+<ul>
+<li>Stocking shelves</li>
+<li>Helping customers</li>
+<li>Maintaining store</li>
+</ul>
+</div>
+
+</div>
+
+<script>
+function togglePanel(button) {
+    let panel = button.nextElementSibling;
+    panel.style.display = panel.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
